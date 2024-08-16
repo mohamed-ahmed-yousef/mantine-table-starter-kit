@@ -1,0 +1,132 @@
+{
+	"zod": {
+		"errors": {
+			"invalid_type": "متوقع {expected}، تم استلام {received}",
+			"invalid_type_received_undefined": "مطلوب",
+			"invalid_literal": "قيمة حرفية غير صالحة، متوقع {expected}",
+			"unrecognized_keys": "مفاتيح غير معروفة في الكائن: {keys}",
+			"invalid_union": "إدخال غير صالح",
+			"invalid_union_discriminator": "قيمة تمييز غير صالحة. متوقع {options}",
+			"invalid_enum_value": "قيمة تعداد غير صالحة. متوقع {options}، تم استلام {received}",
+			"invalid_arguments": "وسائط دالة غير صالحة",
+			"invalid_return_type": "نوع إرجاع الدالة غير صالح",
+			"invalid_date": "تاريخ غير صالح",
+			"custom": "إدخال غير صالح",
+			"invalid_intersection_types": "لا يمكن دمج نتائج التقاطع",
+			"not_multiple_of": "يجب أن يكون الرقم من مضاعفات {multipleOf}",
+			"not_finite": "يجب أن يكون الرقم محدودًا",
+			"invalid_string": {
+				"email": "{validation} غير صالح ",
+				"emoji": "{validation} غير صالح ",
+				"url": "{validation} غير صالح ",
+				"uuid": "{validation} غير صالح ",
+				"ulid": "{validation} غير صالح ",
+				"ip": "{validation} غير صالح ",
+				"cuid": "{validation} غير صالح ",
+				"cuid2": "{validation} غير صالح ",
+				"regex": "غير صالح",
+				"datetime": "{validation} غير صالح ",
+				"startsWith": "إدخال غير صالح: يجب أن يبدأ بـ \"{startsWith}\"",
+				"endsWith": "إدخال غير صالح: يجب أن ينتهي بـ \"{endsWith}\""
+			},
+			"too_small": {
+				"array": {
+					"exact": "{path, select, missingTranslation {مجموعة} other {{path}}} يجب أن تحتوي على {minimum} عنصر(ات) بالضبط",
+					"inclusive": "{path, select, missingTranslation {مجموعة} other {{path}}} يجب أن تحتوي على {minimum} عنصر(ات) على الأقل",
+					"not_inclusive": "{path, select, missingTranslation {مجموعة} other {{path}}} يجب أن تحتوي على أكثر من {minimum} عنصر(ات)"
+				},
+				"string": {
+					"exact": "{path, select, missingTranslation {سلسلة} other {{path}}} يجب أن تحتوي على {minimum} حرف (اًحرف) بالضبط",
+					"inclusive": "{path, select, missingTranslation {سلسلة} other {{path}}} يجب أن تحتوي على {minimum} حرف (اًحرف) على الأقل",
+					"not_inclusive": "{path, select, missingTranslation {سلسلة} other {{path}}} يجب أن تحتوي على أكثر من {minimum} حرف (اًحرف)"
+				},
+				"number": {
+					"exact": "{path, select, missingTranslation {رقم} other {{path}}} يجب أن يكون مساوياً لـ {minimum} بالضبط",
+					"inclusive": "{path, select, missingTranslation {رقم} other {{path}}} يجب أن يكون أكبر من أو يساوي {minimum}",
+					"not_inclusive": "{path, select, missingTranslation {رقم} other {{path}}} يجب أن يكون أكبر من {minimum}"
+				},
+				"bigint": {
+					"exact": "{path, select, missingTranslation {رقم} other {{path}}} يجب أن يكون مساوياً لـ {minimum} بالضبط",
+					"inclusive": "{path, select, missingTranslation {رقم} other {{path}}} يجب أن يكون أكبر من أو يساوي {minimum}",
+					"not_inclusive": "{path, select, missingTranslation {رقم} other {{path}}} يجب أن يكون أكبر من {minimum}"
+				},
+				"set": {
+					"exact": "إدخال غير صالح",
+					"inclusive": "إدخال غير صالح",
+					"not_inclusive": "إدخال غير صالح"
+				},
+				"date": {
+					"exact": "يجب أن يكون التاريخ {minimum, date, short} بالضبط",
+					"inclusive": "يجب أن يكون التاريخ أكبر من أو يساوي {minimum, date, short}",
+					"not_inclusive": "يجب أن يكون التاريخ أكبر من {minimum, date, short}"
+				}
+			},
+			"too_big": {
+				"array": {
+					"exact": "{path, select, missingTranslation {مجموعة} other {{path}}} يجب أن تحتوي على {maximum} عنصر(ات) بالضبط",
+					"inclusive": "{path, select, missingTranslation {مجموعة} other {{path}}} يجب أن تحتوي على {maximum} عنصر(ات) على الأكثر",
+					"not_inclusive": "{path, select, missingTranslation {مجموعة} other {{path}}} يجب أن تحتوي على أقل من {maximum} عنصر(ات)"
+				},
+				"string": {
+					"exact": "{path, select, missingTranslation {سلسلة} other {{path}}} يجب أن تحتوي على {maximum} حرف(اً) بالضبط",
+					"inclusive": "{path, select, missingTranslation {سلسلة} other {{path}}} يجب أن تحتوي على {maximum} حرف(اً) على الأكثر",
+					"not_inclusive": "{path, select, missingTranslation {سلسلة} other {{path}}} يجب أن تحتوي على أقل من {maximum} حرف(اً)"
+				},
+				"number": {
+					"exact": "{path, select, missingTranslation {رقم} other {{path}}} يجب أن يكون مساوياً لـ {maximum} بالضبط",
+					"inclusive": "{path, select, missingTranslation {رقم} other {{path}}} يجب أن يكون أقل من أو يساوي {maximum}",
+					"not_inclusive": "{path, select, missingTranslation {رقم} other {{path}}} يجب أن يكون أقل من {maximum}"
+				},
+				"bigint": {
+					"exact": "{path, select, missingTranslation {رقم} other {{path}}} يجب أن يكون مساوياً لـ {maximum} بالضبط",
+					"inclusive": "{path, select, missingTranslation {رقم} other {{path}}} يجب أن يكون أقل من أو يساوي {maximum}",
+					"not_inclusive": "{path, select, missingTranslation {رقم} other {{path}}} يجب أن يكون أقل من {maximum}"
+				},
+				"set": {
+					"exact": "إدخال غير صالح",
+					"inclusive": "إدخال غير صالح",
+					"not_inclusive": "إدخال غير صالح"
+				},
+				"date": {
+					"exact": "يجب أن يكون التاريخ {maximum, date, short} بالضبط",
+					"inclusive": "يجب أن يكون التاريخ أقل من أو يساوي {maximum, date, short}",
+					"not_inclusive": "يجب أن يكون التاريخ أقل من {maximum, date, short}"
+				}
+			}
+		},
+		"validations": {
+			"email": "بريد إلكتروني",
+			"emoji": "إيموجي",
+			"url": "عنوان URL",
+			"uuid": "معرف عالمي فريد",
+			"ulid": "معرف فريد عالمي قصير",
+			"ip": "عنوان IP",
+			"cuid": "معرف فريد",
+			"cuid2": "معرف فريد 2",
+			"regex": "تعليمة منتظمة",
+			"datetime": "تاريخ ووقت"
+		},
+		"types": {
+			"function": "دالة",
+			"number": "رقم",
+			"string": "سلسلة",
+			"nan": "غير معلوم",
+			"integer": "عدد صحيح",
+			"float": "عدد عشري",
+			"boolean": "منطقي",
+			"date": "تاريخ",
+			"bigint": "عدد صحيح كبير",
+			"undefined": "غير معرف",
+			"symbol": "رمز",
+			"null": "فارغ",
+			"array": "مصفوفة",
+			"object": "كائن",
+			"unknown": "غير معروف",
+			"promise": "وعد",
+			"void": "فارغ",
+			"never": "أبدا",
+			"map": "خريطة",
+			"set": "مجموعة"
+		}
+	}
+}

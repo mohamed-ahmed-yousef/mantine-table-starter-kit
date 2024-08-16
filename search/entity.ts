@@ -1,0 +1,15 @@
+export const entity = {
+	BUCKET: "BUCKET",
+	PUBLIC_BUCKET: "PUBLIC_BUCKET",
+	SYS_EVENT: "SYS_EVENT",
+	PUBLIC_CREDITOR: "PUBLIC_CREDITOR",
+	USER: "USER",
+	DEBT: "DEBT",
+	GROUP: "GROUP",
+	PUBLIC_USER: "PUBLIC_USER",
+	TEMPLATE: "TEMPLATE",
+	PROJECTIONS: "PROJECTIONS",
+	CREDITOR: "CREDITOR",
+} as const;
+
+export type Entity = keyof typeof entity;

@@ -1,0 +1,7 @@
+.table {
+  border-left: 0 !important;
+  border-right: 0 !important;
+}
+.table th {
+  font-style: italic;
+}

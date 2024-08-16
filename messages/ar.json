@@ -1,0 +1,14 @@
+{
+
+	"NavBar": {
+		"activities": "الانشطة",
+		"buckets": "المحفاظات",
+		"creditors": "الدائنين",
+		"debts": "الدائنون",
+		"debt-collector": "محصل الديون",
+		"employees": "الموظفين",
+		"groups": "المجموعات",
+		"home": "الرئيسية",
+		"templates": "النماذج"
+	}
+}

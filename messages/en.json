@@ -1,0 +1,13 @@
+{
+	"NavBar": {
+		"home": "Home",
+		"debts": "Debt",
+		"creditors": "Creditors",
+		"buckets": "Buckets",
+		"employees": "Employees",
+		"templates": "Template",
+		"groups": "Group",
+		"activities": "Activity",
+		"debt-collector": "Debt collector"
+	}
+}
